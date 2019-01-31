@@ -10,3 +10,12 @@
 
 사용할 언어 : JAVA
 
+안드로이드 스튜디오를 공부하면서 만들어보고 있기 때문에 조금 서툴다.  
+activity_main.xml에 textView와 button 3개를 추가하여 메인화면을 간략하게 구성하였다.  
+배경색이나 Layout을 조절하는 데 있어서 모든 스마트폰의 화면에 맞게 하기보다는 우선 소지하고 있는  
+스마트폰에서 제대로 작동하는 것을 확인하면 Layout등 세부사항을 조절할 계획이다.
+
+메인화면
+![default](https://user-images.githubusercontent.com/4442280/52089431-de64ba00-25f1-11e9-95d7-578e9af8c9d6.jpg)
+
+메인화면에 쓰인 아이콘은 ( http://free-icon-rainbow.com/othello-board-game-free-icon-5/ ) 에서 다운로드하였다.
