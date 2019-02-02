@@ -34,8 +34,10 @@ activity_main.xml에 textView와 button 3개를 추가하여 메인화면을 간
 ![default](https://user-images.githubusercontent.com/4442280/52165196-db2c1400-2740-11e9-9813-0e21ece09204.png)  
 설정
 
-배경음은 ( https://bgmstore.net/ ) 에서 다운로드하였고, 
+배경음은 ( https://bgmstore.net/ ) 에서 다운로드하였고,  
 효과음은 ( https://m.blog.naver.com/PostView.nhn?blogId=clean_world_&logNo=100055864459&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F )  
-에서 다운로드하였다. 배경음을 넣는 과정에서 MainActivity에 넣으면 앱의 실행과 동시에 배경음이 나오지만,
+에서 다운로드하였다. 배경음을 넣는 과정에서 MainActivity에 넣으면 앱의 실행과 동시에 배경음이 나오지만,  
 설정창에서 이를 on / off 하기 위해 bgm을 넣는 과정에서 헤매고 있다.  
 효과음도 마찬가지로 on 일 땐 화면을 터치할 때마다 소리가 나도록 하고, off 이면 소리가 나지 않도록 설정할 것이다.
+
+p.s. git bash을 사용하는 과정에서 실수로 Repository를 한 번 엎었다. 대충하지 말자..
