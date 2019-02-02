@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FunOthello</string>
+    <string name="title_activity_game_scene">gameScene</string>
 </resources>
