@@ -1,5 +1,6 @@
 package com.example.plang.funothello;
 
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -16,16 +17,13 @@ public class setting extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.main_theme);
-
-        final SoundPool effect = new SoundPool(1, AudioManager.STREAM_ALARM, 0);
-        final int bubbleSound = effect.load(this, R.raw.effect_sound, 1);
-        final int streamId = effect.play(bubbleSound, 1.0F, 1.0F, 1, -1, 1.0F);
         Button bgm_on = findViewById(R.id.bgm_on);
         bgm_on.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "배경음 on", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), BGMService.class);
+                startService(intent);
 
             }
         });
@@ -34,6 +32,8 @@ public class setting extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "배경음 off", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), BGMService.class);
+                stopService(intent);
             }
         });
         Button eff_on = findViewById(R.id.eff_on);
@@ -41,7 +41,8 @@ public class setting extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "효과음 on", Toast.LENGTH_LONG).show();
-                effect.play(bubbleSound, 1.0F, 1.0F, 1, 0, 1.0F);
+                Intent intent = new Intent(getApplicationContext(), effectService.class);
+                startService(intent);
             }
         });
         Button eff_off = findViewById(R.id.eff_off);
@@ -49,7 +50,8 @@ public class setting extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "효과음 off", Toast.LENGTH_LONG).show();
-                effect.stop(streamId);
+                Intent intent = new Intent(getApplicationContext(), effectService.class);
+                stopService(intent);
             }
         });
     }

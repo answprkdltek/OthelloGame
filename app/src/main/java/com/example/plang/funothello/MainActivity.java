@@ -1,9 +1,6 @@
 package com.example.plang.funothello;
 
 import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,10 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        MediaPlayer mp = MediaPlayer.create(this, R.raw.main_theme);
-//        mp.setLooping(true);
-//        mp.start();
 
         TextView textView = findViewById(R.id.textView);
         textView.setText(textView.getText());
