@@ -41,3 +41,10 @@ activity_main.xml에 textView와 button 3개를 추가하여 메인화면을 간
 효과음도 마찬가지로 on 일 땐 화면을 터치할 때마다 소리가 나도록 하고, off 이면 소리가 나지 않도록 설정할 것이다.
 
 p.s. git bash을 사용하는 과정에서 실수로 Repository를 한 번 엎었다. 대충하지 말자..
+
+3일차) BGM설정과 안드로이드의 컴퍼넌트
+
+setting 화면만 만들어놓고 Activity로 상호작용 하여 배경음을 끄고 켤 수 있게만 하면 되는 줄 알았는데,  
+Background에서 수행되는 컴포넌트인 Service를 이용하여 동작하도록 해야 한다.  
+BGMService를 생성하여 Activity인 setting에 연결하여 on / off 를 통해 설정화면에서 창을 이동했다가  
+다시 돌아와서 배경음을 켜거나 끌 때 제대로 동작하도록 구현하였다.  
